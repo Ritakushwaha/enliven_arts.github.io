@@ -2,6 +2,11 @@
 @import url("fontawesome-all.min.css");
 @import url("https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231")
 
+img {
+  border-radius: 50%;
+}
+
+
 table {
 		width: 100%;
 		margin-left: 50%;
