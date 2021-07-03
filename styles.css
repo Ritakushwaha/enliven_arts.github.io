@@ -60,7 +60,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 body {
     font-family: "Trirong", serif;
-    background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%);
+    background: linear-gradient(to right, #fff 0%, #abcdef 50%, #abcdef 51%, #ffffff 100%);
     font-size: 16px;
     color: #fff;
     margin: 0;
@@ -105,6 +105,7 @@ transition: background-color .2s ease-in-out;
 position: relative;
 display: block;
 color: #000;
+color: #fff
 text-decoration: none;
 outline: 0;
 font-weight: 600;
@@ -134,18 +135,15 @@ padding: 0 1.25em;
 }
 
 
-h1 {
-  color: white;
+h1,h3,h4 {
+  color: black;
 }
 
 h2 {
-  color: white;
+  color: black;
   text-align: center;
   }
 
-h3 {
-  color: white;
-  }
 
 
 #blank{    padding-top:30px;}
