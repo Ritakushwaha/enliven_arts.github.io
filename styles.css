@@ -1,6 +1,264 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
+.form_container {
+  width: 330px;
+  height : 330px;
+  position: fixed;
+  bottom: -240px;
+  right: 0;
+  transition: .5s;
+}
+
+.form_container:hover {
+  bottom: 1;
+}
+
+#whatsapp {
+  width: 100px;
+  float: right;
+  transition: .5s
+}
+
+.form-head-container {
+  margin-bottom: 10px;
+}
+
+#whatsapp:hover {
+  padding-left: 5px;
+}
+
+
+#submit-btn {
+  background-color: #afeeee;
+  border-radius: none;
+  color: white;
+  padding: 7px 12px;
+  margin: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit-btn:hover {
+  background-color: darkorange;
+}
+
+#caption_1 {
+  color: red;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-size: 3vw;
+  animation-name: caption-fade;
+  animation-duration: 2s;
+}
+
+@keyframes caption-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 40%
+  }
+}
+
+.featured_wrapper {
+  position: relative;
+  display: flex;
+  overflow: auto;
+}
+
+#pop_cat {
+  color: blue;
+  text-align: center;
+  font-size: 5vw;
+  animation-name: captio-fade;
+  animation-duration: 2s;
+}
+@keyframes captio-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 31.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #afeeee;
+  border-radius: 15px;
+  text-align: center;
+  color: red;
+}
+.tabs{
+  animation-name: product_container_anim;
+  animation-duration: 2s;
+
+}
+@keyframes product_container_anim {
+  0%{
+    opacity: 0;
+    margin-top: 500px;
+
+  }
+  100%{
+    opacity: 1;
+    margin-top: 8px;
+  }
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+  width: 89%;
+}
+
+.cat_text {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: -2%;
+}
+
+.btn_container {
+  background-color: white;
+  position: relative;
+  top: 1;
+  padding: 7%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.view-more-btn {
+  background-color: #afeeee;
+  max-width: 100%;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 9px 18px;
+  cursor: :pointer;
+  border-radius: 5px;
+}
+
+view-more-button:hover {
+  background-color: darkorange;
+}
+
+#social_media_container {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+}
+
+#social_media_container:hover {
+  cursor: pointer;
+}
+
+#facebook_container {
+  background-color: white;
+  transition: .5s
+}
+
+#facebook_container:hover {
+  padding-left: 5px;
+}
+
+#whatsapp_container {
+  background-color: white;
+  transition: .5s
+}
+
+#whatsapp_container:hover {
+  padding-left: 5px;
+}
+
+#twitter_container {
+  background-color: white;
+  transition: .5s
+}
+
+#twitter_container:hover {
+  padding-left: 5px;
+}
+
+#insta_container {
+  background-color: white;
+  transition: .5s
+}
+
+#insta_container:hover {
+  padding-left: 5px;
+}
+
+/*End*/
+
+
+
+
+
+
+
+
 img {
   border-radius: 20%;
 }
@@ -61,7 +319,8 @@ body {
 
 
 #nav{
-    background: linear-gradient(350deg,  rgba(20,0,0,0) 0%,#ffffff 100%);
+    /*background: linear-gradient(350deg,  rgba(20,0,0,0) 0%,#ffffff 100%);*/
+    background-color: #ffffff;
     box-shadow: inset 0px 0px 0px 0.1px rgba(0, 0, 0, 0.1), 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -122,6 +381,26 @@ padding: 0 1.25em;
     border-top: solid 0.6em #282828;
 }
 
+.nav_item {
+  color: aliceblue;
+}
+
+#caption_1 {
+  animation-name: caption-fade;
+  animation-duration: 2s;
+}
+
+@keyframes caption-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 40%
+  }
+}
 
 h1,h3,h4 {
   color: black;
@@ -131,7 +410,7 @@ h2 {
   color: black;
   text-align: center;
   }
-  
+
   p{
 	  color: black;
 	  font-size: 10px;
@@ -157,8 +436,23 @@ hr{
 
 .wrapper{
 	background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-    box-shadow: inset 0px 0px 0px 0.1px rgba(0, 0, 0, 0.1), 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 0.1px rgba(0, 0, 0, 0.1), 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
 	padding: 3em 0 3em 0;
+  animation-name: product_container_anim;
+  animation-duration: 2s;
+  border-radius: 50px;
+}
+
+@keyframes product_container_anim {
+  0%{
+    opacity: 0;
+    margin-top: 500px;
+
+  }
+  100%{
+    opacity: 1;
+    margin-top: 8px;
+  }
 }
 
 .box {
@@ -1570,6 +1864,3 @@ top: -5px;
 ul.social li a:hover:before {
     background-color: transparent;
 }
-
-
-	
