@@ -1,0 +1,308 @@
+body {
+  margin: auto;
+}
+
+.nav_wrapper {
+  background-color: #afeeee;
+  padding: 5px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav_list {
+  font-size: 25px;
+  color: white;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav_list li {
+  display: inline;
+  margin: 0px;
+}
+
+.nav_list li a:hover {
+  background-color: darkorange;
+}
+
+.nav_list li a:active {
+  background-color: chartruese;
+}
+
+.nav_list li a:visited {
+  background-color: darkviolet;
+}
+
+.nav_item {
+  color: aliceblue;
+}
+
+.form_container {
+  background-color: #323232;
+  width: 330px;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  position: fixed;
+  bottom: -280;
+  right: 0;
+  transition: .5s;
+}
+
+.form_container:hover {
+  bottom: 0;
+}
+
+#email {
+  width: 50px;
+  float: left;
+}
+
+.form-head-container {
+  background-color: #000000;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.form-item {
+  margin-left: 15px;
+  color: white;
+  padding-left: 8px;
+}
+
+#sub {
+  height: 100px;
+  width: 200px;
+}
+
+#contact-us-label {
+  color: white;
+}
+
+#submit-btn {
+  background-color: #afeeee;
+  border-radius: none;
+  color: white;
+  padding: 7px 12px;
+  margin: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit-btn:hover {
+  background-color: darkorange;
+}
+
+#caption_1 {
+  color: red;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-size: 3vw;
+  animation-name: caption-fade;
+  animation-duration: 2s;
+}
+
+@keyframes caption-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 40%
+  }
+}
+
+.featured_wrapper {
+  position: relative;
+  display: flex;
+  overflow: auto;
+}
+
+#pop_cat {
+  color: blue;
+  text-align: center;
+  font-size: 5vw;
+  animation-name: caption-fade;
+  animation-duration: 2s;
+}
+@keyframes caption-fade {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 31.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #afeeee;
+  border-radius: 15px;
+  text-align: center;
+  color: red;
+}
+.tabs{
+  animation-name: product_container_anim;
+  animation-duration: 2s;
+
+}
+@keyframes product_container_anim {
+  0%{
+    opacity: 0;
+    margin-top: 500px;
+
+  }
+  100%{
+    opacity: 1;
+    margin-top: 8px;
+  }
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+  width: 89%;
+}
+
+.cat_text {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: -2%;
+}
+
+.btn_container {
+  background-color: white;
+  position: relative;
+  top: 1;
+  padding: 7%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.view-more-btn {
+  background-color: #afeeee;
+  max-width: 100%;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 9px 18px;
+  cursor: :pointer;
+  border-radius: 5px;
+}
+
+view-more-button:hover {
+  background-color: darkorange;
+}
+
+#social_media_container {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+}
+
+#social_media_container:hover {
+  cursor: pointer;
+}
+
+#facebook_container {
+  background-color: white;
+  transition: .5s
+}
+
+#facebook_container:hover {
+  padding-left: 5px;
+}
+
+#whatsapp_container {
+  background-color: white;
+  transition: .5s
+}
+
+#whatsapp_container:hover {
+  padding-left: 5px;
+}
+
+#twitter_container {
+  background-color: white;
+  transition: .5s
+}
+
+#twitter_container:hover {
+  padding-left: 5px;
+}
+
+#insta_container {
+  background-color: white;
+  transition: .5s
+}
+
+#insta_container:hover {
+  padding-left: 5px;
+}
