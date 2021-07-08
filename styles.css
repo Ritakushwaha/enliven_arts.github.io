@@ -1,6 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
+
+#article{
+  border-radius: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 5%;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tabs{
+  animation-name: product_container_anim;
+  animation-duration: 2s;
+
+}
+@keyframes product_container_anim {
+  0%{
+    opacity: 0;
+    margin-top: 500px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 8px;
+  }
+}
+
+
+.row {
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  height: 100%;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  color: black;
+  border-radius: : 100px;
+  padding: 2px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  width: 99%;
+}
+
+
+
 .form_container {
   width: 330px;
   height : 330px;
@@ -108,6 +184,10 @@
     width: 100%;
     display: block;
   }
+}
+
+#abstract_body{
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
 }
 
 /* Add some shadows to create a card effect */
